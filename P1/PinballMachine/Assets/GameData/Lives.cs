@@ -19,7 +19,7 @@ public class Lives : MonoBehaviour
 
     {
 
-        lives = lives;
+        lives = lives + 0;
 
     }
 }

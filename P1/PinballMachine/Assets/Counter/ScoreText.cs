@@ -8,7 +8,7 @@ public class ScoreText : MonoBehaviour {
     public Text scoretext;
 
     // De integer voor score
-    int score;
+    public int score;
 
     // Dit is een custom void dat word geactiveert in een andere script, om te zien ga naar ScoreUI, De int points ernaast is er ook voor de andere script om punten van objecten bij elkaar op te tellen
     public void ChangeScore(int points) {

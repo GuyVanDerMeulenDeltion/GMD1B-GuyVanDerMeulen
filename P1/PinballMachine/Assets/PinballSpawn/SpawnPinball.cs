@@ -16,6 +16,8 @@ public class SpawnPinball : MonoBehaviour {
     // Dit zijn de vars waarbij je in inspector een audiofile kan kiezen, ze hebben wel nog een trigger nodig
     public AudioClip bananacollision;
     public AudioClip spawntwo;
+    public bool eventtrigger;
+    public string aftertrigger;
 
     // Dit is een shortut naar de audiosource component
     private AudioSource audioSource;
@@ -41,10 +43,20 @@ public class SpawnPinball : MonoBehaviour {
     void OnCollisionEnter() {
 
         //Ongeveer hetzelfde als hierboven alleen word het getriggerd upon collision
-        GameObject pinball = (GameObject)Instantiate(prefab, pinballspawn.GetComponent<Transform>().position, pinballspawn.GetComponent<Transform>().rotation);
-        pinball.GetComponent<Rigidbody>().velocity = transform.forward * power;
-        audioSource.clip = bananacollision;
-        audioSource.Play();
 
+        if (eventtrigger == true) {
+
+            GameObject pinball = (GameObject)Instantiate(prefab, pinballspawn.GetComponent<Transform>().position, pinballspawn.GetComponent<Transform>().rotation);
+            pinball.GetComponent<Rigidbody>().velocity = transform.forward * power;
+            audioSource.clip = bananacollision;
+            audioSource.Play();
+            eventtrigger = false;
+            GameObject.Find("GameManager").GetComponent<Lives>().lives = GameObject.Find("GameManager").GetComponent<Lives>().lives + 1;
+            gameObject.GetComponent<Renderer>().material.color = Color.black;
+        }
+            else
+            {
+            print(aftertrigger);
+        }
     }
 }

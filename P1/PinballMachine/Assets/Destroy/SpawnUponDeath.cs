@@ -27,9 +27,11 @@ public class SpawnUponDeath : MonoBehaviour
     {
 
         // Deze functie word uitgevoerd als het voldoet met de eisen en als er collision word gedetect
-        if (GameObject.Find("GameManager").GetComponent<Lives>().lives > 0)
+        if (GameObject.Find("GameManager").GetComponent<Lives>().lives > 1)
 
         {
+
+
             // Dit is de formule en pathfinding van welke coordinaten het gespawned moet worden of overgenomen, samen met de formule van snelheid en richting waar het naartoe moet
             GameObject pinball = (GameObject)Instantiate(prefab, pinballspawn.GetComponent<Transform>().position, pinballspawn.GetComponent<Transform>().rotation);
 
@@ -52,6 +54,19 @@ public class SpawnUponDeath : MonoBehaviour
 
         {
 
+
+
+        }
+
+        if (GameObject.Find("GameManager").GetComponent<Lives>().lives > 0)
+        {
+
+
+
+        }
+        else
+
+        {
             // Tekst, reference naar gameover string
             print(gameover);
 
@@ -63,7 +78,6 @@ public class SpawnUponDeath : MonoBehaviour
 
             // Hiermee word de soundfile uitgevoerd
             audioSource.Play();
-
         }
     }
 }
