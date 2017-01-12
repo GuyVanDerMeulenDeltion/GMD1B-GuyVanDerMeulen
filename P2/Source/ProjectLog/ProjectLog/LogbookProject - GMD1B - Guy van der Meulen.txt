@@ -1,0 +1,12 @@
+(21-11-16) Notulen gemaakt gebaseerd op de eerste brainstorming en vegadering
+(28-11-16) Notulen gemaakt gebaseerd op de tweede brainstorming en vegadering
+(30-11-16) Notulen gemaakt gebaseerd op de derde brainstorming en vegadering
+(2-12-16) Notulen gemaakt gebaseerd op de vierde brainstorming en vegadering
+(5-12-16) Notulen gemaakt gebaseerd op de vijfde brainstorming en vegadering
+(7-12-16) Logo gemaakt.
+(16-12-16) Beursstand geschetst, schaal bij alles gezet en afmetingen en begonnen met het physical gebeurte door het op te bouwen.
+(16-12-16) Begonnen met Weapon, heb splines gebruikt voor de vorm, gedupliceerd en daarna geattached, gebridged en gemirrored, en daarna heb ik alles op de zijkanten geconnect en ge-scaled.
+(20-12-16) Begonnen met unwrappen.
+(5-1-17) Unwrappen finished + angons weggehaalt en model bij gewerkt ivb met crystal.
+(7-1-17) Begonnen met texturen.
+(12-1-17) Klaar met Texturen.

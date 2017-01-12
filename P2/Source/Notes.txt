@@ -1,0 +1,1 @@
+The editable weapon is still in a phase where angons existed within the model, in the unwrapped version its all fixed.
