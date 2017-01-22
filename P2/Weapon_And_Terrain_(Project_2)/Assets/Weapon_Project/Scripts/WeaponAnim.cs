@@ -64,7 +64,7 @@ public class WeaponAnim : MonoBehaviour {
 
     public void PickUpReadyAnimation()  {
 
-        weaponPosition = new Vector3(weaponPosition.x, Mathf.PingPong(Time.time, hoverAnimationAssistance) + yAssist - heightAssist , weaponPosition.z);
+        //weaponPosition = new Vector3(weaponPosition.x, Mathf.PingPong(Time.time, hoverAnimationAssistance) + yAssist - heightAssist , weaponPosition.z);
         transform.Rotate(weaponCurrentRotation);
         weaponCurrentRotation.z = +rotationSpeed;
         exitReady = true;
