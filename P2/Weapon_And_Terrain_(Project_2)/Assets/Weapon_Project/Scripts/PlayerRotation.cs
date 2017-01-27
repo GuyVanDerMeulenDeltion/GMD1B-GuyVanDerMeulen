@@ -4,14 +4,17 @@ using UnityEngine;
 
 public class PlayerRotation : MonoBehaviour {
 
-    // Update is called once per frame
-    void Update()   {
+    private int positionZero = 0;
+
+    void Update()
+    {
 
         GameObject manager = GameObject.Find("GameManager");
         GameManager gameOptions = manager.GetComponent<GameManager>();
 
+        //Lets the x axis of the player rotate by using mousemovements.
         float rotationX = Input.GetAxis("Mouse X") * gameOptions.mouseSensitivity;
-        transform.Rotate(0, rotationX, 0);
+        transform.Rotate(positionZero, rotationX, positionZero);
 
     }
 }

@@ -7,9 +7,10 @@ public class GemRotation : MonoBehaviour {
     public Vector3 gemrotation;
     public float gemrotationspeed;
 	
-	// Update is called once per frame
-	void Update () {
 
+	void Update ()
+    {
+        //Makes the gem in the staff rotate.
         gemrotation.y = gemrotationspeed;
         transform.Rotate(gemrotation);
     }

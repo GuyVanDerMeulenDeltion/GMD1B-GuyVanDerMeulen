@@ -7,6 +7,12 @@ TagManager:
   - Terrain
   - Weapon
   - Staff
+  - Teleport
+  - Door
+  - Statue_One
+  - Statue_Two
+  - Statue_Three
+  - Teleporter
   layers:
   - Default
   - TransparentFX
