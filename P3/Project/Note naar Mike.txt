@@ -1,0 +1,1 @@
+Sinds de laatste github fix is mijn hele unity gerollbacked op het punt dat ik niet genoeg tijd heb om alles te fixen, dus ik lever de animaties apart in samen met de texture en model.
